@@ -82,7 +82,7 @@ plugins=(git
 	copyfile # copy content of provided file copyfile $file
 	copypath # copy current path
 	sudo
-	zsh-autosuggestions
+#	zsh-autosuggestions
 	#jump, # mark a dir to easily jump to it: jump $mark
 	#pj, # define project folder to easyly jump to 
 	#scd, # smart change of directory pavoljuhas/smart-change-directory
@@ -122,7 +122,7 @@ alias nv=nvim
 
 # PATH
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-source /home/linuxbrew/.linuxbrew/share/powerlevel10k/powerlevel10k.zsh-theme
+#source /home/linuxbrew/.linuxbrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
