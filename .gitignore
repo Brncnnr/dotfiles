@@ -1,3 +1,4 @@
 .config/composer/
 .ssh/known_hosts
 .config/lazygit
+.config/nvim/lazy-lock.json
