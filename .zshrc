@@ -86,7 +86,7 @@ plugins=(git
     #jump, # mark a dir to easily jump to it: jump $mark
     #pj, # define project folder to easyly jump to 
     #scd, # smart change of directory pavoljuhas/smart-change-directory
-    #ssh-agent, # look for examples what it exactly does
+    ssh-agent # look for examples what it exactly does
     # look for mosh!
     )
 
