@@ -24,3 +24,7 @@ vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 25
 
 vim.opt.splitright = true
+vim.opt.splitbelow = true
+
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
