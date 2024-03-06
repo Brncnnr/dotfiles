@@ -77,7 +77,18 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git
+    copybuffer # "save" current terminal input, ea. before hitting enter 
+    copyfile # copy content of provided file copyfile $file
+    copypath # copy current path
+    sudo
+    zsh-autosuggestions
+    #jump, # mark a dir to easily jump to it: jump $mark
+    #pj, # define project folder to easyly jump to 
+    #scd, # smart change of directory pavoljuhas/smart-change-directory
+    #ssh-agent, # look for examples what it exactly does
+    # look for mosh!
+    )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -107,6 +118,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias nv=nvim
+alias lg=lazygit
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
