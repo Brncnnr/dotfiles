@@ -16,6 +16,8 @@ return {
 					"html",
 					"cssls",
 					"marksman",
+					"tsserver",
+					"volar",
 				},
 				automatic_installation = true,
 			})
@@ -33,6 +35,8 @@ return {
 			lspconfig.html.setup({})
 			lspconfig.cssls.setup({})
 			lspconfig.marksman.setup({})
+			lspconfig.tsserver.setup({})
+			lspconfig.volar.setup({})
 
 			-- keymaps defined in telescope.lua
 		end,
@@ -138,7 +142,7 @@ return {
 			--    you can use this plugin to help you. It even has snippets
 			--    for various frameworks/libraries/etc. but you will have to
 			--    set up the ones that are useful for you.
-			-- 'rafamadriz/friendly-snippets',
+			"rafamadriz/friendly-snippets",
 		},
 		config = function()
 			-- See `:help cmp`
@@ -147,6 +151,7 @@ return {
 			luasnip.config.setup({})
 
 			cmp.setup({
+                require("luasnip.loaders.from_vscode").lazy_load(),
 				snippet = {
 					expand = function(args)
 						luasnip.lsp_expand(args.body)
