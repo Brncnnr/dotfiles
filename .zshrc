@@ -121,6 +121,9 @@ alias nv=nvim
 alias lg=lazygit
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+#Totara docker Setup
+export PATH="$PATH:/home/brncnnr/totara-docker-dev/bin"
+alias tsql='tdocker exec mysql8 mysql -u root -p"root"'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
