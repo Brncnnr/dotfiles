@@ -60,7 +60,14 @@ return {
 		end,
 	},
 	{
-		"lewis6991/gitsigns.nvim",
+		"lewis6991/gitsigns.nvim", -- e.a. show changes by colored lines next to the line numbers
 		opts = {},
+	},
+	{
+		"christoomey/vim-tmux-navigator", -- jump between nvim and tmux panes
+		vim.keymap.set("n", "C-<s-left>-h", ":TmuxNavigateLeft<CR>"),
+		vim.keymap.set("n", "C-j", ":TmuxNavigateDown<CR>"),
+		vim.keymap.set("n", "C-k", ":TmuxNavigateUp<CR>"),
+		vim.keymap.set("n", "C-l", ":TmuxNavigateRight<CR>"),
 	},
 }
